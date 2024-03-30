@@ -10,7 +10,7 @@ class Solution(object):
                 output_arr.append(nums[i] + nums[i+1])
         # 4. If is other position than the first one, sum the current element [i] and sum with the last element [i-1]
             else:
-                output_arr.append(output_arr[i] + nums[i+1])        
+                output_arr.append(output_arr[i] + nums[i+1])
         # 5. -1 and return the output array
         return output_arr
 # Define the Running sun array
@@ -21,10 +21,3 @@ solution = Solution()
 result = solution.runningSum(input_arr)
 # Print the return
 print(result)
-
-
-
-"""
-:type nums: List[int]
-:rtype: List[int]
-"""
