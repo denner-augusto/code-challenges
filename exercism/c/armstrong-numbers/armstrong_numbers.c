@@ -19,9 +19,9 @@ int main(){
 
     int number_lenght = getNumberLenght(input_number);
 
-    printf(int number_lenght);
+    //printf("Number lenght:", int number_lenght);
 
-    return 0;
+    return number_lenght;
 }
 
-printf(number_lenght);
+//printf(number_lenght);
