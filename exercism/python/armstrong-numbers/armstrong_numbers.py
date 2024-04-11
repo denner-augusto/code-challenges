@@ -1,4 +1,4 @@
-def is_armstrong_number(number = 370):
+def is_armstrong_number(number: int) -> bool:
     """
 
     :number: int - number to be analyzed if its a armstrong number or not
@@ -21,8 +21,8 @@ def is_armstrong_number(number = 370):
     str_number = str(number)
 
     # 3. Iterate in the digits of the number, in which for each digit, we will power the current digit by number lenght
-    for digit in range(number_lenght):
-        int_digit = int(str_number[digit])
+    for digit in str_number:
+        int_digit = int(digit)
         digit_power = int_digit**number_lenght
     
     # 4. Sum the iteration results in the variable 
@@ -36,3 +36,4 @@ def is_armstrong_number(number = 370):
         result = False
 
     return result
+is_armstrong_number(370)
